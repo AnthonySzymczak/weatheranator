@@ -11,19 +11,118 @@
 
 </head>
 
-<body>
-    <div class="weather">
-    <h1>Weather Dashboard</h1>
-    <h4>please type in the city/state of where you would like to view the weather below</h2>
-        <div class="input">
-            <input type="text" placeholder="What city would you like to explore?" class="input_text">
-            <div class="container text-center mt-2">
-                <button class="btn btn-primary" id="submit">SEARCH</button>
-            </div>
-          </div>
+
+<div class="container">
+
+    <body>
+        <div class="weather">
+            <h1>Weather Dashboard</h1>
+            <h4>please type in the city/state of where you would like to view the weather below</h2>
+                <div class="input">
+                    <input type="text" placeholder="What city would you like to explore?" class="input_text">
+                    <div class="container text-center mt-2">
+                        <button class="btn btn-primary" id="submit">SEARCH</button>
+                    </div>
+                </div>
         </div>
 
-        <script src="./assets/script.js"></script>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row ml-1 ">
+                    <div class="col-sm-12" id="current-weather">
+                        <h2 class="city-name" id="current-city"></h2>
+                        <div>Temperature:<span class="current" id="temperature"></span></div>
+                        <br>
+                        <div>Wind Speed:<span class="current" id="windSpeed"></span></div>
+                        <br>
+                        <div>Humidity:<span class="current" id="humidity"></span></div>
+                        <br>
+                        <div>UV index:<span class="current  py-2 px-3 text-white" id="uv-index"></span></div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="col-sm-12" id="future">
+                    <h4>5-Day Forecast:</h4>
+                    <div class="row">
+                        <div class="col-sm-2 bg-primary forecast ml-2 mb-1 p-2 mt-1">
+                            <div class="box">
+                                <div id="futureDate1"></div>
+                                <div id="futureImg1"></div>
+                                <div>UV index:<span class="current  py-2 px-3 text-white" id="uv-index1"></span></div>
+                                <br>
+                                <div>Temperature:<span id="futureTemp1">  F</span></div>
+                                <br>
+                                <div>Wind Speed:<span class="current" id="windSpeed1">  MPH</span></div>
+                                <br>
+                                <div>Humidity:<span id="futureHumidity1"> %</span></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast ml-2 mb-1 p-2 mt-1">
+                            <div class="box">
+                                <div id="futureDate2"></div>
+                                <div id="futureImg2"></div>
+                                <div>UV index:<span class="current  py-2 px-3 text-white" id="uv-index2"></span></div>
+                                <br>
+                                <div>Temperature:<span id="futureTemp2">  F</span></div>
+                                <br>
+                                <div>Wind Speed:<span class="current" id="windSpeed2">  MPH</span></div>
+                                <br>
+                                <div>Humidity:<span id="futureHumidity2"> %</span></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast ml-2 mb-1 p-2 mt-1">
+                            <div class="box">
+                                <div id="futureDate3"></div>
+                                <div id="futureImg3"></div>
+                                <div>UV index:<span class="current  py-2 px-3 text-white" id="uv-index3"></span></div>
+                                <br>
+                                <div>Temperature:<span id="futureTemp3">  F</span></div>
+                                <br>
+                                <div>Wind Speed:<span class="current" id="windSpeed3">  MPH</span></div>
+                                <br>
+                                <div>Humidity:<span id="futureHumidity3"> %</span></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast ml-2 mb-1 p-2 mt-1">
+                            <div class="box">
+                                <div id="futureDate4"></div>
+                                <div id="futureImg4"></div>
+                                <div>UV index:<span class="current  py-2 px-3 text-white" id="uv-index4"></span></div>
+                                <br>
+                                <div>Temperature:<span id="futureTemp4"></span>  F</div>
+                                <br>
+                                <div>Wind Speed:<span class="current" id="windSpeed4">  MPH</span></div>
+                                <br>
+                                <div>Humidity:<span id="futureHumidity4"> %</span></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast ml-2 mb-1 p-2 mt-1">
+                            <div class="box">
+                                <div id="futureDate5"></div>
+                                <div id="futureImg5"></div>
+                                <div>UV index:<span class="current py-2 px-3 text-white" id="uv-index5"></span></div>
+                                <br>
+                                <div>Temperature:<span id="futureTemp5">  F</span></div>
+                                <br>
+                                <div>Wind Speed:<span class="current" id="windSpeed5">  MPH</span></div>
+                                <br>
+                                <div>Humidity:<span id="futureHumidity5"> %</span></div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+
+<script src="./assets/script.js"></script>
 </body>
 
 </html>
