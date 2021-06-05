@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+    <title>WEATHERANATOR</title>
+
 </head>
+
 <body>
-    <h1>Welcome to WEATHERANATOR</h1>
-    <h2>please type in the city/state of where you would like to view the weather below</h2>
-    <script src="./assets/script.js"></script>
+    <div class="weather">
+    <h1>Weather Dashboard</h1>
+    <h4>please type in the city/state of where you would like to view the weather below</h2>
+        <div class="input">
+            <input type="text" placeholder="What city would you like to explore?" class="input_text">
+            <div class="container text-center mt-2">
+                <button class="btn btn-primary" id="submit">SEARCH</button>
+            </div>
+          </div>
+        </div>
+
+        <script src="./assets/script.js"></script>
 </body>
+
 </html>
