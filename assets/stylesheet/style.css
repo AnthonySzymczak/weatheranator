@@ -44,3 +44,9 @@ text-align: left;
 color: black;
 
 }
+.container{
+    padding: 10px;
+    margin: 3px;
+    border: white;
+    border-style: ridge;
+}
